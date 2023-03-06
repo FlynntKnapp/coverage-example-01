@@ -62,12 +62,14 @@
             "program": "C:/Users/FlynntKnapp/.virtualenvs/coverage-example-01-jWCYU_bz/Scripts/coverage.exe",
             "args": [
                 "run",
+                "--source=.",
 
                 // "--omit=**/migrations/*,**/config/*,**/manage.py,**/tests/test*",
                 // "--omit=things/**/__init__*",
                 // "--include=./*",
-                // "--source=.",
+                // "--source=things/views.py",
                 // "--omit=**/migrations/*",
+                // "--omit=**/__init__.py",
 
                 "${workspaceFolder}\\manage.py",
                 "test",
