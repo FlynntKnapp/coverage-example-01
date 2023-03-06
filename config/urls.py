@@ -19,7 +19,9 @@ from django.views.generic import RedirectView
 
 urlpatterns = [
     # Redirect the server root URL to the `things` app:
-    path('', RedirectView.as_view(url='/things/')),
+    path('', RedirectView.as_view(pattern_name='things:list')),
+    # Alternatively, the URL can be hard-coded instead of using the `pattern_name` argument:
+    # path('', RedirectView.as_view(url='/things/')),
 
     path('admin/doc/', include('django.contrib.admindocs.urls')),
     path('admin/', admin.site.urls),

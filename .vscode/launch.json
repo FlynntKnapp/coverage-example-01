@@ -30,7 +30,7 @@
         //     "name": "coverage run",
         //     "type": "python",
         //     "request": "launch",
-        //     "program": "C:/Users/FlynntKnapp/.virtualenvs/django-ModelForm-FormView-XJWlRQLZ/Scripts/coverage.exe",
+        //     "program": "C:/Users/FlynntKnapp/.virtualenvs/coverage-example-01-jWCYU_bz/Scripts/coverage.exe",
         //     "args": [
         //         "run",
         //         "--source=.",
@@ -43,12 +43,15 @@
             "name": "coverage report",
             "type": "python",
             "request": "launch",
-            "program": "C:/Users/FlynntKnapp/.virtualenvs/django-ModelForm-FormView-XJWlRQLZ/Scripts/coverage.exe",
+            "program": "C:/Users/FlynntKnapp/.virtualenvs/coverage-example-01-jWCYU_bz/Scripts/coverage.exe",
             "args": [
                 "report",
                 "-m",
+                
                 // "--omit=**/migrations/*,**/config/*,**/manage.py,**/tests/test*",
-                "--omit=**/migrations/*,**/manage.py",
+                // "--omit=**/migrations/*,**/manage.py",
+                
+                "--omit=**/manage.py",
                 "--skip-empty",
             ],
         },
@@ -56,18 +59,22 @@
             "name": "coverage run",
             "type": "python",
             "request": "launch",
-            "program": "C:/Users/FlynntKnapp/.virtualenvs/django-ModelForm-FormView-XJWlRQLZ/Scripts/coverage.exe",
+            "program": "C:/Users/FlynntKnapp/.virtualenvs/coverage-example-01-jWCYU_bz/Scripts/coverage.exe",
             "args": [
                 "run",
+
                 // "--omit=**/migrations/*,**/config/*,**/manage.py,**/tests/test*",
                 // "--omit=things/**/__init__*",
                 // "--include=./*",
                 // "--source=.",
-                "--omit=**/migrations/*",
+                // "--omit=**/migrations/*",
+
                 "${workspaceFolder}\\manage.py",
                 "test",
+
                 // "things",
                 // `NOSE_ARGS`: ["--with-coverage", "--cover-package=things", "-v", "1"],
+
                 "--with-coverage",
                 "--cover-package=things",
                 "-v",
